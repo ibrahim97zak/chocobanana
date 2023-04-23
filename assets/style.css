@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lobster&family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap');
 
 body{
   background-color: #fce6ab;
@@ -218,8 +219,29 @@ background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
   .hot-drinks{
     background-color: #fce6ab;
     background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
-
+  }
+  .cold-drinks{
+    background-color: #fce6ab;
+    background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
   }
   .hot-drink-menu{
     box-shadow: 10px 10px 20px rgba(0,0,0,.6);
   }
+  /*publisher data*/
+  .project-publisher{
+display: flex;
+justify-content: center;
+align-items: center;
+    bottom: 0;
+    width: 100%;
+background-color: #934225;
+  }
+  .project-publisher h3{
+  font-size: 20px;
+  color: aliceblue;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  }
+  .project-publisher h3 a{
+    display:inline;
+    color:#ffc107;
+    }

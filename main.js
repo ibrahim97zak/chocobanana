@@ -44,7 +44,7 @@ openbtn.addEventListener("click", () => {
 $(document).ready(function(){
     $("#carousal1").owlCarousel({
         items: 1,
-        margin: 10,
+        margin: 0,
         dots: false,
         nav: false,
         loop:true,

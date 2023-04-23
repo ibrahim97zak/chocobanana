@@ -1,134 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <noscript>the website doesnt work when JavaScript is Disabled</noscript>
-  <!--bootstrap-->
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <noscript>the website doesnt work when JavaScript is Disabled</noscript>
+    <!--bootstrap-->
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
     />
-    
-<!--animation-->
-<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/media.css">
-  <title>Document</title>
-</head>
-<body>
- 
-  <div class="curtain position-relative">
-    <div class="container mt-5">
-      <div class="pannana col-lg-12 d-flex flex-column  align-items-center pt-5 position-relative">
-        <div class="animation static " id="walk">
-          
-        </div>
-        <div class="title d-flex flex-column  align-items-center">
-          <img src="assets/imgs/choco-banana-arabic1.png" class="choco-text" alt="">
-          <button class="butn mt-3 text-capitalize" id="openbtn">see the menu</button>
-        </div>
-        
-      </div>
-      <div class="curtain-inner  mb-sm-5">
-        <div class="container">
-          <div class="row ">
-            <div class="col-md-12" >
-              <div class="container position-relative d-flex justify-content-center mt-3 ">
-                  <div class="owl-carousel" id="carousal1">
-                    <div class="item">
-                      <a href=""  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/imgs/1.png" class="d-block w-100 wrapper-holder" alt="cold-drink"></a>
-                      
-                    </div>
-                    <div class="item">
-                      <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft"><img src="assets/imgs/2.png" class="d-block w-100 wrapper-holder" alt="hot-drink"></a>
-                      
-                    </div>
+    <!--animation-->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
 
-                  </div>
-                </div>
-                </div> 
-
-          </div>  
-
-<div class="offcanvas offcanvas-end hot-drinks" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <div class="container">
-      <div class="menu-title d-flex justify-content-between align-items-center">
-        <img class="w-100" src="assets/imgs/summer (1).png" alt="summer-pannana">
-
-      </div>
-    </div>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="menu  d-flex justify-content-center  ">
-      <div class="owl-carousel owl-carousel2 w-100 " id="carousal2">
-        <div class="item w-100">
-        <img src="assets/imgs/cold-drinks-menu1.png" class="d-block w-100 wrapper-holder" alt="cold-drink">
-          
-        </div>
-        <div class="item w-100">
-          <img src="assets/imgs/cold-drinks-menu2.png" class="d-block w-100 wrapper-holder" alt="hot-drink">
-          
-        </div>
-        <div class="item w-100">
-          <img src="assets/imgs/cold-drinks-menu3.png" class="d-block w-100 wrapper-holder" alt="hot-drink">
-          
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-<div class="offcanvas offcanvas-start hot-drinks" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-  <div class="offcanvas-header">
-    <div class="container">
-      <div class="menu-title d-flex justify-content-between align-items-center">
-        <img class="w-100" src="assets/imgs/winter.png" alt="winter-pannana">
-      </div>
-    </div>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="menu  d-flex justify-content-center  ">
-      <img class="w-100 hot-drink-menu" src="assets/imgs/hot-drinks-menu.png" alt="hot-drink">
-    </div>
-  </div>
-</div>
-                  
-                  
-                
-                
-
-
-                
-                
-              
-              
-
-                        
-            
-            <div class="col-md-12 mt-4 " id="walk2">
-              <div class="popup d-none " id="popup" dir="rtl" lang="ar"> ايش حاب تشرب؟</div>
-            </div>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/media.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="curtain position-relative">
+      <div class="container mt-5">
+        <div
+          class="pannana col-lg-12 d-flex flex-column align-items-center pt-5 position-relative"
+        >
+          <div class="animation static" id="walk"></div>
+          <div class="title d-flex flex-column align-items-center">
+            <img
+              src="assets/imgs/choco-banana-arabic1.png"
+              class="choco-text"
+              alt=""
+            />
+            <button class="butn mt-3 text-capitalize" id="openbtn">
+              see the menu
+            </button>
           </div>
         </div>
+        <div class="curtain-inner mb-sm-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div
+                  class="container position-relative d-flex justify-content-center mt-3"
+                >
+                  <div class="owl-carousel" id="carousal1">
+                    <div class="item">
+                      <a
+                        href=""
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"
+                        ><img
+                          src="assets/imgs/1.png"
+                          class="d-block w-100 wrapper-holder"
+                          alt="cold-drink"
+                      /></a>
+                    </div>
+                    <div class="item">
+                      <a
+                        href=""
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasLeft"
+                        aria-controls="offcanvasLeft"
+                        ><img
+                          src="assets/imgs/2.png"
+                          class="d-block w-100 wrapper-holder"
+                          alt="hot-drink"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="offcanvas offcanvas-end cold-drinks"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <div class="container">
+                  <div
+                    class="menu-title d-flex justify-content-between align-items-center"
+                  >
+                    <img
+                      class="w-100"
+                      src="assets/imgs/summer (1).png"
+                      alt="summer-pannana"
+                    />
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="menu d-flex justify-content-center">
+                  <div class="owl-carousel owl-carousel2 w-100" id="carousal2">
+                    <div class="item w-100">
+                      <img
+                        src="assets/imgs/cold-drinks-menu1.png"
+                        class="d-block w-100 wrapper-holder"
+                        alt="cold-drink"
+                      />
+                    </div>
+                    <div class="item w-100">
+                      <img
+                        src="assets/imgs/cold-drinks-menu2.png"
+                        class="d-block w-100 wrapper-holder"
+                        alt="hot-drink"
+                      />
+                    </div>
+                    <div class="item w-100">
+                      <img
+                        src="assets/imgs/cold-drinks-menu3.png"
+                        class="d-block w-100 wrapper-holder"
+                        alt="hot-drink"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-publisher">
+                <h3 class="text-capitalize">تصميم ابراهيم  زكارنة <a class="text-decoration-none" href="tel:0598030286">0598030286</a></h3>
+              </div>
+            </div>
+            <div
+              class="offcanvas offcanvas-start hot-drinks"
+              tabindex="-1"
+              id="offcanvasLeft"
+              aria-labelledby="offcanvasLeftLabel"
+            >
+              <div class="offcanvas-header">
+                <div class="container">
+                  <div
+                    class="menu-title d-flex justify-content-between align-items-center"
+                  >
+                    <img
+                      class="w-100"
+                      src="assets/imgs/winter.png"
+                      alt="winter-pannana"
+                    />
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="menu d-flex justify-content-center">
+                  <img
+                    class="w-100 hot-drink-menu"
+                    src="assets/imgs/hot-drinks-menu.png"
+                    alt="hot-drink"
+                  />
+                </div>
+              </div>
+              <div class="project-publisher">
+                <h3 class="text-capitalize">تصميم ابراهيم  زكارنة <a class="text-decoration-none" href="tel:0598030286">0598030286</a></h3>
+                
+              </div>
+            </div>
+
+            <div class="col-md-12 mt-4" id="walk2">
+              <div class="popup d-none" id="popup" dir="rtl" lang="ar">
+                ايش حاب تشرب؟
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </div>
-  
-  
-  
-  <script
+
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
     <script src="jq/jquery-3.6.3.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
-  <script src="main.js"></script>
-</body>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
