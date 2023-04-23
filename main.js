@@ -49,7 +49,7 @@ $(document).ready(function(){
         nav: false,
         loop:true,
         autoplay: true,
-        autoplayTimeout:3000,
+        autoplayTimeout:4000,
         autoplayHoverPause:true,
         autoWidth:true,
     });
