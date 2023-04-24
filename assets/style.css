@@ -165,7 +165,7 @@ background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
     z-index: 10;
   }
   .owl-carousel{
-    box-shadow: 10px 0px 2px rgba(0,0,0,.6);
+    box-shadow: 10px 7px 7px rgba(0,0,0,.6);
     width: 250px;
     overflow: hidden;
     z-index: 10;
