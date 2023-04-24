@@ -46,7 +46,7 @@ $(document).ready(function(){
         items: 1,
         margin: 0,
         dots: false,
-        nav: false,
+        nav: true,
         loop:true,
         autoplay: true,
         autoplayTimeout:4000,

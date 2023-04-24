@@ -46,18 +46,18 @@ background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
     width: 400px;
   }
 .butn{
-    width: 200px;
-    height: 60px;
+    width: 220px;
+    height: 70px;
     line-height: 15px;
     padding: 5px 15px;
     border-radius: 1em;
     border: 5px solid #934225;
     box-shadow: 0px 0px 0 rgb(208, 123, 26), 1px 1px 0 rgb(56, 53, 48), 2px 2px 0 rgb(170,108,0), 3px 3px 0 rgb(142,80,0), 4px 4px 3px rgba(0,0,0,0.63), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2);
     letter-spacing: .2rem;
-  font-size: 22px;
+  font-size: 25px;
   color: #ffc107;
-  font-family: 'Lobster', cursive;
-  text-shadow: 0px 0px 0 rgb(227,165,0), 1px 1px 0 rgb(198,136,0), 2px 2px 0 rgb(170,108,0), 3px 3px 0 rgb(142,80,0), 4px 4px 3px rgba(0,0,0,0.63), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2);
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  text-shadow: 0px 0px 0 rgb(227,165,0), 1px 1px 0 rgb(198,136,0), 2px 2px 0 rgb(170,108,0);
   }
   
   .walking-banana img{
@@ -69,11 +69,11 @@ background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
     /* right: -50px; */
     width: 350px !important;
     height:350px;
-    background-image: url(../assets/imgs/standing.png);
+    background-image: url(../assets/imgs/standing2-scaled.png);
   }
 
   .walk{
-    background: url(../assets/imgs/css_sprites.png);
+    background: url(../assets/imgs/sprite_2nd.png);
     position: absolute;
     top: 260px;
     right: 00px;
@@ -98,10 +98,11 @@ background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
     left: 0px;
     width: 350px !important;
     height:350px;
-    background-image: url(../assets/imgs/standing.png);
+    background-image: url(../assets/imgs/standing2-scaled.png);
+    z-index: 12;
   }
   .walk2{
-    background: url(../assets/imgs/css_sprites.png);
+    background: url(../assets/imgs/sprite_2nd.png);
     position: absolute;
     top: 310px;
     right: 240px;
@@ -129,12 +130,17 @@ background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
     min-height:85px;
     margin:20px;
     position:relative;
-    right: -186px;
+    right: -200px;
     top: -60px;
     text-align:center;
     z-index: -1;
-    font-family: 'Noto Naskh Arabic', serif;
-    font-size: 18px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    color: #934225;
+    font-weight: 500;
+    font-size: 22px;
+    text-shadow: 0px 0px 0 rgb(227,165,0), 1px 1px 0 rgb(198,136,0), 2px 2px 0 rgb(170,108,0);
+    z-index: 11;
+    box-shadow: 10px 7px 7px rgba(0,0,0,.6);
   }
   
   .popup::after{
@@ -156,15 +162,18 @@ background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
     top: 65px;
     background-color: #FEF7E7;
     border-radius: 50%;
+    z-index: 10;
   }
   .owl-carousel{
-    box-shadow: 10px 10px 20px rgba(0,0,0,.6);
+    box-shadow: 10px 0px 2px rgba(0,0,0,.6);
     width: 250px;
     overflow: hidden;
+    z-index: 10;
   }
   .owl-carousel .item {
     height: 100%;
-    
+
+
   }
   .owl-carousel .item img{
     width: 250px !important;
@@ -172,6 +181,9 @@ background-image: linear-gradient(90deg, #fce6ab 0%, #FDCE72 100%);
     
   }
   /**/
+  .owl-carousel2{
+    box-shadow: 10px 10px 20px rgba(0,0,0,.6);
+  }
   .owl-carousel2 .item img{
     width: 400px !important;
     height: 400px !important;
